@@ -6,9 +6,10 @@ services:
     restart: always
     hostname: "playground.yude.jp"
     volumes:
-      - /mnt/data3/share:/root/share
+      - data:/root
     networks:
       - no-inet
+    mem_limit: 256m
 
   cloudflared:
     image: cloudflare/cloudflared:2021.8.3
@@ -27,3 +28,11 @@ networks:
     internal: true
   inet:
     driver: bridge
+
+volumes:
+  data:
+    driver: local
+    driver_opts:
+      o: "size=10G"
+      device: tmpfs
+      type: tmpfs

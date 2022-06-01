@@ -4,6 +4,7 @@
 ## Limitation
 * No internet connection.
 * You need to send us a PR in order to add packages. (`packages.txt`)
+* 256MB RAM, 10GB storage (but these won't be reflected to `df -h`, `free`, etc.)
 
 ## How to join
 1. Fork this repository.

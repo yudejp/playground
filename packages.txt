@@ -1,2 +1,6 @@
 openssh
 neofetch
+gcc
+nano
+vim
+python3

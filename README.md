@@ -1,6 +1,10 @@
 # playground
 🍙 The Linux playground for hobby use on yude.jp
 
+## Limitation
+* No internet connection.
+* You need to send us a PR in order to add packages. (`packages.txt`)
+
 ## How to join
 1. Fork this repository.
 2. Edit `add-ssh-key.sh` in order to import your SSH public key.
@@ -9,7 +13,7 @@
 If your PR is merged, do the following:
 
 4. Install `cloudflared` to your computer.
-5. Paste below to your `$HOME/.ssh/config`
+5. Paste below to your `$HOME/.ssh/config`.
     ```
     Host playground.yude.jp
         User root
@@ -18,7 +22,7 @@ If your PR is merged, do the following:
         StrictHostKeyChecking no
         UserKnownHostsFile=/dev/null
     ```
-6. Run `ssh playground.yude.jp`
+6. Run `ssh playground.yude.jp`.
 
 ## License
 MIT License.

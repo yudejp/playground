@@ -18,7 +18,8 @@ RUN apk add --no-cache openssh && \
     rm add-ssh-key.sh add-packages.sh packages.txt && \
     mkdir -p /root/.ssh && \
     mv /root/authorized_keys /root/.ssh/authorized_keys && \
-    chmod 0600 /root/.ssh/authorized_keys
+    chmod 0600 /root/.ssh/authorized_keys && \
+    rm /sbin/apk
 
 EXPOSE 22
 
